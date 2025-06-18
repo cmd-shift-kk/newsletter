@@ -1,0 +1,143 @@
+/* general */
+
+body {
+    background-color:rgb(224, 224, 224);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    color: rgb(224, 224, 224);
+    text-align: center;
+}
+h2 {
+    color: rgb(132, 91, 148);
+    text-align: center;
+}
+h3 {
+    color: rgb(132, 91, 148);
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(197, 197, 197);
+    padding: 5px;
+}
+a {
+    color: rgb(107, 107, 107);
+}
+b {
+    color: rgb(74, 19, 96);
+}
+
+/* nav bar */
+
+h4 a {
+    display: block;
+    color: rgb(224, 224, 224);
+    text-align: center;
+    text-decoration: none;
+    position:absolute;
+    padding:10px;
+}
+h4 a:hover {
+    background-color: rgb(132, 91, 148);
+    border-radius: 10px;
+}
+
+/* layout */
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "tldr tldr"
+        "col1 col2"
+        "books books"
+        "footer footer";
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 5px;
+}
+
+.container > div {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container > div.header {
+    grid-area: header;
+    text-align: center;
+    background-color: rgb(74, 19, 96);
+    margin: 10px;
+}
+
+.container > div.tldr {
+    grid-area: tldr;
+    background-color: rgb(197, 197, 197);
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.container > div.col1 {
+    grid-area: col1;
+    height: 80vh;
+    overflow-y: scroll;
+    box-sizing: content-box;
+    margin: 20px;
+}
+
+.container > div.col2 {
+    grid-area: col2;
+    height: 80vh;
+    overflow-y: scroll;
+    box-sizing: content-box;
+    margin: 20px;
+}
+
+.container > div.books {
+    grid-area: books;
+    background-color: rgb(197, 197, 197);
+    border-radius: 20px;
+}
+
+.container > div.footer {
+    grid-area: footer;
+    text-align: center;
+    color: rgb(107, 107, 107);
+}
+
+/* books */
+
+.book {
+    padding: 10px;
+    width: 8%;
+    opacity: 50%;
+    margin-bottom: 20px;
+}
+
+.book:hover {
+    opacity: 100%;
+}
+
+.book.active {
+    opacity: 100%;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(107, 107, 107);;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(132, 91, 148);
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px rgb(74, 19, 96);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgb(74, 19, 96);
+}
