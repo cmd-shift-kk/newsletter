@@ -110,16 +110,7 @@ h4 a:hover {
 .book {
     padding: 10px;
     width: 8%;
-    opacity: 50%;
     margin-bottom: 20px;
-}
-
-.book:hover {
-    opacity: 100%;
-}
-
-.book.active {
-    opacity: 100%;
 }
 
 /* scroll bar */
@@ -140,4 +131,16 @@ h4 a:hover {
 
 ::-webkit-scrollbar-thumb:active {
   background: rgb(74, 19, 96);
+}
+
+/* archive */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: larger;
+}
+
+ul > li {
+    color: rgb(107, 107, 107);
 }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>July 18, 2025 - Konner's Life Update</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="https://images.emojiterra.com/twitter/v13.1/512px/1f913.png">
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div class="header">
+                <h4><a href="index.html">Back to Today</a></h4>
+                <h1>Life Update</h1>
+                <h2>May 19 - June 18, 2025</h2>
+            </div>
+
+            <div class="tldr"">
+                <p>Hello, welcome to my life update. This will be a (allegedly) monthly informational publication about my life coming out on the 18th (I put reminders in my GCal so there is some chance it will actually happen). You are encouraged to provide feedback and/or conversation via text or email.</p>
+                <h3 style="position:relative;">TL;DR</h3>
+                <p>
+                    <b>Rose:</b> witnessing Arsenal's UWCL win<br>
+                    <b>Thorn:</b> the reappearance of BloomingLeaf<br>
+                    <b>Bud:</b> going to Maine with Annie
+                </p>
+            </div>
+
+            <div class="col1">
+                <h3>Work</h3>
+                <p>I started working in the lab again the day after graduation. There's four of us here for the summer total, but people have been bopping in and out for various commitments so there's only been one full week where we've all actually been here. I am working on a bunch of different things. I submitted a paper to MoDRE about a project I worked on last spring, which had me looking at BloomingLeaf (a goal modeling tool) which I never thought I would see again. Instead, I was haunted by some of my junior year shortcomings, which became very clear as I was writing about the stuff I'd implemented but I think I remedied the major issues and the paper came together in the end, somewhat stressfully. I also got BloomingLeaf deployed on one of the Smith servers so now it is theoretically ready for experimentation on actual human subjects in the fall.</p>
+                <p>I'm also continuing work on the project that I started in my thesis. The recall (and ideally precision but that's less important) still need some improvement before it would be reasonable to have a user put all their trust in the tool. (Skip the rest of this paragraph, and maybe this whole section, if you are not interested in slightly technical talk.) I spent some time looking into different fine tuning methods, but I keep ending up back to square one with the problem where we don't have enough data to gain any actual insights that generalize to other projects. We're still trying to track down a better dataset and thought we had a lead, but the dataset's definition of a requirement is different than ours. Therefore, I have forayed into completely new methods that are usually really stupid but occasionally actually kinda work. My current best lead identifies "keywords" as the individual words in the sentence whose embeddings are most similar to the embeddings of the sentence as a whole and then linking any sentences whose keywords have a similar sentiment to the overall sentiment of the other sentence, which can actually achieve decent recall, but the precision still needs to be at least twice what it is. I've also dabbled in the frontend development of the tool that my thesis problem will hopefully someday (ie. by next May) be the backend for, but the rest of the people in the lab are working solely on that so I will probably not majorly pick up work on it until August when they leave.</p>
+                <p>I've also started looking into the project that was Sonora's thesis. In the fall, we are looking to expand upon the study that she did on the ability of generative LLMs to create accurate parsing trees to represent linear temporal logic expressions such that a novice can understand them. So far, this has mostly involved fiddling with UMass's GenAI playground, which seems to be limited by the inability to access the backend via code, which might render it pretty useless for our purposes unless I am willing to repeatedly click the button on the frontend.</p>
+                <p>Finally, I'm supposed to be figuring out what I want to do with my life by reading the publications that came out of the most recent conferences for all of the different SWE communities and figuring out which ones sound the most interesting. Unsurprisingly, this is the task that I have been avoiding the most because I am vehemently opposed to The Future. The only topic I've really looked into is programming languages because there's a conference in October in Singapore that has a call for people interested in pursuing a PhD in the subject to attend the conference, but I don't know if I will because I am pretty confused by the papers I've read so far. It seems like a combination of CSC250 (Theory of Computation) and CSC252 (Algorithms) so it is very theoretical but I do also like the idea of being able to definitively prove that code works rather than only being able to say that no bugs have yet been found.</p>
+
+                <h3>Community and Stuff</h3>
+                <p>Sky and I are living in an Airbnb in Easthampton. Its location is kind of awesome; it's set back in the woods a bit and very much has woods cottage vibes. The weird parts are that (1) the bathroom is separated from the kitchen by only a curtain and (2) there is no bathroom sink so you have to brush your teeth in the kitchen sink. This is because it is half of a house so it looks like they tacked the bathroom on after the original building was established. The other half of the house was empty for the first few weeks, but now there's other people living there which doesn't affect us much except for the number of cars in the driveway. Overall it's a nice place though and satisfies my need for the woods, so it definitely will suffice for the summer.</p>
+                <p>It's nice to be cooking again. The stove dials go the opposite way than I would have predicted, so I severely burned my lentil mush on the first night, but other than that it's been fairly uneventul. I have been eating egg salad every day for lunch, which probably surprises no one. Abby has come over for dinner a few times, and also has been gracious to let me into Cutter so I can do my laundry for free.</p>
+                <p>I went to a meeting of a book club at Forbes Library, which meets once a month. It's the Paradise City Readers, a "respectful, queer / LGBT-friendly, easy-going bunch who want an excuse to get out more and talk about books." For the June meeting, only me and three other people were there, and I think the other three were probably all over the age of sixty. I had a good time though; it was pretty much the parts of English class that I actually enjoyed and it's interesting to hear the perspectives of people who I don't noramlly socialize with. I also came across a listing for a Spanish discussion group, which advertised itself as "an inviting program for learning in a friendly and relaxed atmosphere" but it has semi-mandatory attendance and homework, so I would somewhat contest the claim of a relaxed atmosphere, but either way it's nice to learn. I do really seem to have old people hobbies though.</p>
+                <p>Tragically, the Asparagus Festival was canceled due to thunderstorms, which prevented the lab from entering the asparagus bunching competition (a lab tradition). However, signing up for the nonexistent Asparagus Festival was not a complete loss because I was drawn as the winner of VIP tickets to the Green River Festival.</p>
+                <p>Caroline visited from New York one weekend, and Katie and Chelsea came over too. Chelsea buzzed my head. It seemed like a good time to do it, since I just graduated and basically see the same people repeatedly so people won't keep commenting on my haircut. It's very fun to rub my head but my ears are notably colder in lab.</p>
+                <p>I went home this past weekend to get some stuff for Maine. While I was there attended the No Kings protest in New London with my mom. She has gotten really committed to protesting and crafts herself some very unhinged but funny signs and hats. I was honestly a little impressed by the turnout of southeastern Connecticut. It was also lovely to see the cats while I was home, and I took Dover out in his backpack so he could do some sniffing of the outdoors.</p>
+                <p>I'm working a half day today and then touring an apartment and then Annie and I are driving up to my grandparents' house in Maine.</p>
+
+            </div>
+
+            <div class="col2">
+                <h3>Portugal</h3>
+                <p>By far the most exciting thing that happened to me this month was my trip to Lisbon. It really quite awesome; it's definitely my favorite European city that I've been to since I've had a working memory. It turns out that my brother and I share the strategy of wandering around cities without navigation in order to learn about them, which is what we did on the first day there. We ended up in some parks and found the fan zone for the Champions League. The Barcelona fans severely outnumbered the Arsenal ones, and at that moment all the belief that I had been insisting upon for the past month that anything can happen in a single game left my body and I felt worried. Nonetheless, we got in line to take a picture with Gunnersaurus (the Arsenal mascot) and had reached the first place in line when he devastatingly had to leave. Maggie, Seychelle, and I went to a party organized by Baller FC ahead of the game, where we met Becky Taylor-Gill, Jessy Parker-Humphreys, and Flo Lloyd-Hughes (Counter Pressed podcast icons) which was really cool.</p>
+                <p>The next day was the game. The stadium sold out but the actual attendance was disappointingly low (38,356, so still better than what we typically get in the US, but nowhere near what the World Cup final was). The atmosphere was electric, especially because our seats were in the second row and adjacent to the Arsenal supporters section. Arsenal's defense absolutely locked in and Stina Blackstenius put away one of her chances and Maggie and I could not believe it but somehow they won! We stuck around as they celebrated and sung North London Forever and it was possibly one of the greatest days of my life.</p>
+                <p>The next day we again wandered around Lisbon and did history related stuff. We went to the Museum Aljube Resistencia e Liberdade, which used to be a prison and now has exhibits about the dictatorship in Portugal from 1926 to 1974. I learned a lot of stuff becuase obviously the US education system does not teach us about anything that happens in other countries. Unsurprisingly, the regime learned from the CIA (along with Mussolini and Hitler) about how to better torture their prisoners to get information out of them. We also went to Sao Jorge Castle and did the audio tour, which was pretty funny and was told in second person as if you were someone who was trying to break into the castle. Apparently my brother used to think that there were two types of vacations: the type where you hike and the type where you visit castles. Needless to say we ended up reminiscing a lot about the castles we went to when we lived in England which made me want to go back there.</p>
+                <p>We also did a day trip south to Sesimbra, where we went kayaking in some sea caves. There was a brief moment of concern that our lack of advance booking had resulted in all of the kayak tours being fully booked for the day, but we ended up finding a place that didn't even make you go with a tour guide which was even more ideal. It was very beautiful. My brother capsized. Then we did wandered around the castle that overlooks the town (creatively called Sesimbra Castle) which was pretty small but had great views of where we had just kayaked.</p>
+                <p>On our final day, we went west to Sintra, where we visited the Moorish Castle. Approaching the castle was a solid walk up a hill through the woods, which was probably good for my knee strength. We also looked at some other palaces but didn't go inside. Then we continued west to Cabo da Roca, the westernmost point in continental Europe. The tourist picture spot was full of people, but walking just 100 meters up the path left pretty much everyone everyone behind. We walked along the coast for a while on a somewhat sketchy trail (definitely good for my knee if you consider that what doesn't kill you makes you stronger) that had beautiful views of the ocean and cliffs, and descended a ravine between two of said cliffs to a beach with a waterfall. The waves were big; the ocean is scary.</p>
+                
+                <h3>Knick the Knee</h3>
+                <p>May 29 marked four months post-surgery. The four month mark doesn't formally come with any new activities unlocked, but it did happen to coincide (to the day, very satisfyingly) with my release from physical therapy. I will not miss having to go to that place every week. They seemed to discharge me based on my ability to do basic human things (not recreational ones), and it's true that I can. Even my stair gait is relatively close to even (I think), and it's not really impacting my life other than the fact that I long to run and lift more than my bodyweight.</p>
+                <p>I am not technically supposed to be biking outdoors (as opposed to stationary) until June 29, but I biked to work for the first time on June 3 (which I later learned happens to be World Bicycle Day). It's nowhere near as nice as running, but it's definitely a way less boring form of cardio than anything stationary in the weight room and can potentially save a little bit of gas money. My knee usually feels a bit crunchy after I bike, but the limiting factor is not my knee but rather how much my butt hurts from the bike seat.</p>
+                <p>I know the surgeon is going to ask me if my knee is doing better than pre-surgery when I see him in July, and I think the honest answer is not really based on the crunchiness when I squat or straighten it unsupported, but I still think it's too soon to say since I'm not running or anything.</p>
+            </div>
+
+            <div class="books">
+                <h3>Books Read This Month</h3>
+                <div style="max-width:fit-content;display:flex;justify-content:center;">
+                    <img src="https://m.media-amazon.com/images/I/61su39k8NUL.jpg" class="book">
+                    <img src="https://m.media-amazon.com/images/I/71rCTKpPFpL.jpg" class="book">
+                    <img src="https://mpd-biblio-covers.imgix.net/9780374609825.jpg" class="book">
+                    <img src="https://m.media-amazon.com/images/I/817fLx43AVL.jpg" class="book">
+                    <img src="https://m.media-amazon.com/images/I/719o6pMLwvL.jpg" class="book">
+                    <img src="https://m.media-amazon.com/images/I/81FYqmncqQL.jpg" class="book">
+                    <img src="https://m.media-amazon.com/images/I/71wgkgqNL1L._AC_UF1000,1000_QL80_.jpg" class="book">
+                    <img src="https://m.media-amazon.com/images/I/811yGnZC+0L.jpg" class="book">
+                    <img src="https://m.media-amazon.com/images/I/71zAlftJuzL.jpg" class="book">
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>Konner's Life Update | July 18, 2025 | <a href="https://forms.gle/w47quSTaYAfPKhaXA">Unsubscribe</a></p>
+            </div>
+
+        </div>
+            
+    </body>
+</html>
