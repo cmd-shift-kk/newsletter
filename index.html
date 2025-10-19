@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>September 18, 2025 - Konner's Life Update</title>
+        <title>October 18, 2025 - Life Update</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="https://images.emojiterra.com/twitter/v13.1/512px/1f913.png">
     </head>
@@ -12,62 +12,61 @@
             <div class="header">
                 <h4><a href="archive.html">Archive</a></h4>
                 <h1>Life Update</h1>
-                <h2>August 19 - September 18, 2025</h2>
+                <h2>September 19 - October 18, 2025</h2>
             </div>
 
             <div class="tldr"">
                 <h3 style="position:relative;">TL;DR</h3>
+                <p>I typically write this newsletter as the month goes by, but this month I forgot, so it has been entirely written in the past two days. I therefore apologize for any worsened quality or increased recency bias.</p>
                 <p>
-                    <b>Rose:</b> running!<br>
-                    <b>Thorn:</b> thinking about future plans<br>
-                    <b>Bud:</b> honestly, Mountain Day
+                    <b>Rose:</b> I've gotten really invested in work projects<br> 
+                    <b>Thorn:</b> it gets dark too soon after I leave work<br>
+                    <b>Bud:</b> USWNT is playing in Hartford
                 </p>
             </div>
 
             <div class="col1">
                 <h3>Work</h3>
-                <p>The most notable thing about work was going to Valencia (which has its own section). In August, I spent a bunch of time making and practicing my presentation for the conference and also finished a section of the linear temporal logic paper. I enjoy LTL as a concept but after manually checking the correctness and clarity of 1463 explanations and counting, I am getting a bit sick of it.</p>
-                <p>It was strange to leave with the campus still pretty empty and to get back and have Ford filled with students again. My work hasn't changed too much with students back, but we're running two studies which cannot yet be elaborated on and I've been getting people in the lab up to speed with what happened in the codebase over the summer. It's nice having people around in the lab again, and going to CC lunch is the highlight of most days.</p>
-                <p>I also sort of starting working on personal statement, which has sent me into a crisis in that I actually have no idea why I chose to be a computer science major. It's fun, but it was also a very arbitrary decision and I probably could have chosen about eight other majors and had just as much fun. I'm not necessarily regretting anything, but it is weird to reflect on how I ended up here.</p>
-                
-                <h3>Knick the Knee</h3>
-                <p>I saw the surgeon and am now back in PT twice a week. The surgeon was more worried about the crunchiness than I thought. I kinda thought that everyone's knee is a bit crunchy, but he said that we need to keep an eye on it, though it's fine for now as long is it isn't altering my daily life. I got to jog in my first PT session which was awesome and actually felt a lot more okay than I was expecting. I have also been doing a lot of jumping and agility ladder stuff. It's kinda nice to feel mildly athletic again, even though I am still kind of bad at everything. But at least now that I am allowed to do it, there's some hope of getting better.</p>
-                <p>I'm now able to go for jogs which is indescribably amazing. Until I started running again, I don't think I realized how much it was bothering me to feel stuck and unable to get away. Even something as trivial as avoiding being tickled or nutmegged used to make me almost fall over because my left foot was so planted that I couldn't take a step without planning ahead and shifting my weight. Though I certainly wouldn't describe myself as agile, I'm starting to feel closer to normal which is a great feeling that I'm enjoying almost equally to running.</p>
-
-                <h3>Miscellaneous</h3>
-                <p>Katie and Chelsea tragically moved away at the end of August, so my social life saw a tragic downturn. Before they left, we finished Queer Ultimatum and went for a last swim at Musante Beach, though it was getting cold for the season by then. Luckily, the people of Fruit St. returned around the time that they left so I have spent some lovely evenings there.</p>
-                <p>My dad visited twice in the last month for unrelated reasons, but he took me and freinds out to dinner both times (Thai Garden and Florence Pizza). We also tried Berry and Batter, which is the new place with acai bowls and waffles. My landlord's daughter happened to be working at the time and we were the only ones in the store so we hung out a bit. I got a waffle with biscoff and strawberries. It was delectable, though expensive (which is why I'd waited until my dad's visit in the first place). My dad also delivered a rocking chair that my grandparents were cleaning out of their house which is a great upgrade to my apartment furniture.</p>
-                <p>I've also attended Smith's games against UMass Boston, Amherst, SUNY Cortland, and WNEU. I enjoy watching them but am definitely still way to emotionally invested in the games than I should be.</p>
+                <p>As I believe I explained in a previous update, two of our studies are occurring as part of a special studies because the participants need to learn things before they can representatively participate in our tasks and this also makes people more willing to dedicate nontrivial amounts of time to the study. But the point is, we have a class of ten people and I had to teach a class about using git because I "need to get used to it" and "people are a lot meaner when you're not at a historically women's college" or something along those lines. I suppose this is a fair point, but I was nonetheless really sweaty the whole time.</p>
+                <p>Warning: some unexplained terminology about git forthcoming. Skip if you wish.</p>
+                <p>My life has revolved around running the CI/CD pipeline for all of the development that has occurred on our GitLab extension. For backstory, development on this project has been occurring since the summer of 2024, although I wasn't on it until recently. For a while, the lab consensus (before my time; I don't really know the reasoning behind it) was that we don't need to pass the pipeline, which is created by the official GitLab developers and essentially copies the entire repository into a container on a server (ours is called Gritty) and then runs a series of tests, jobs, and sub-pipelines according to which particular files were changed to verify code quality before you merge any code into another branch. Then, the lab consensus changed and it was decided that we should be passing the pipeline before merging anything. So, I was tasked with cherry-picking every commit that was made from the past fourteen or so months and modifying them according to the cryptic messages spit out by the pipeline until it passed. The inconvenient thing about the pipeline is that it ranges in length from approximately 12 to 36 hours, and the codebase only exists on the computers physically in Ford 343, so I have to go into lab as soon as possible after a pipeline fails or passes, which has caused me camp out at Fruit St. until ungodly hours of the night (okay, like 11 PM, which is ungodly compared to my usual bedtime) so that I can be in proximity to Ford in order to maximize the amount of pipelining that occurs overnight. But it's all worth it for the euphoria I feel when I finally see the row of green checkmarks that means I get to merge another chunk of commits.</p>
+                <p>Then, just this week I discovered than in the intervening time between summer of 2024 when we originally branched off of the GitLab master branch and when we pulled from the GitLab master branch in July as the standard against which to compare pipeline, the features off of which we built our new functionality have been completely re-routed such that all of our changes, while they may not throw errors in the pipeline, have no actual effect on the software because those files are now just dead code that never get called in the new backend of GitLab.</p>
+                <p>To add insult to injury, this past Wednesday night, the ITS people somehow remotely wiped all the data off of the computer we had been using for development. They meant to wipe another computer that was supposed to be wiped, but typed in one of the numbers wrong and so they irretrievably erased the OS and everything that had ever been installed or saved on the computer. While it is true that we probably should have been pushing to remote more often, it was still devastating news to lose all the work that had been saved on that computer and it seems quite absurd that the ITS people just did that on a random Wednesday night.</p>
+                <p>In other news, I've been conducting one on one interviews with people for our goal modeling methodology study, which is a new type of research for me. It's not my favorite type of research but we have gotten some unexpected and useful insights.</p>
+                <p>Yesterday, our lab hosted the CS lunch talk series speaker. I'd met him at two conferences and was a little worried because he always aggressively asks questions after conference talks. It was a bit of a struggle to get him to stop giving opinions and actually listen to what I was trying to explain to him, but then he did eventually give some useful tips. He's also the guy who writes ey/em neopronouns when referring to third person singular in his papers, which I think is absolutley iconic. His lunch talk was about the technical debt created by using AI at various stages of the software development process and how we can measure the net time actually saved or wasted because of the increased debugging costs caused by the perceived saved time by vibe coding.</p>
             </div>
 
             <div class="col2">
-                <h3>Valencia</h3>
-                <p>I went to Valencia the first week of September in order to the International Requirements Engineering Conference (otherwise known as RE). On the way there, I had a layover in Paris and watched Minions: Rise of Gru on the plane. I arrived in the morning and couldn't check into the hotel yet, so I did work in the airport for a while and then wandered around Turia Garden, which is a really cool park that used to be a river but overflowed too many times so they rerouted the river and made the riverbed into a giant long park. It had nice biking, walking, and running paths which made me really wish I could run but I went for a walk and then read under a tree for a while. I also took a detour to Camp de Mestalla (the stadium where Valencia CF plays). Our hotel was nicely located next to the Central Market and a couple of cathedrals. I ended up without a roommate because we couldn't find another student looking for a roommate which was nice, and the room had a kitchen so I cooked meals for myself which allowed for some some much-needed time alone after conference socialization.</p>
-                <p>I spent the first day of the conference at the RETRAI (Requirements Engineering for Trustworthy Artificial Intelligence) workshop. It was an interesting mix of disciplines and definitely made me think about things in new ways. I particularly enjoyed the talks by some of the philosophers who were there. I did not enjoy the format of coffee breaks and lunch. I didn't know anyone there, so I basically had to approach random groups of people who looked like they could potentially be students and introduce myself out of the blue. I would have been perfectly content to stand by myself and eat the snacks but Alicia told me that I had to talk to at least three new people per day.</p>
-                <p>My presentation was the next day so I went to MoDRE (Model Driven Requirements Engineering) for the whole day. Even though this was what my paper was about, this is really not my area of interest, so I found these talks less enjoyable than the previous day. My talk went okay. It was nice to get it over with and then be able to enjoy the rest of the conference without stress (other than, of course, the socializing and alleged networking). That night there was a guided tour of the historic part of the city for the members of the conference and then the welcome reception in the Botanical Garden of Valencia. The gardens were really cool and I managed to find a group of people early on, which was a mix of professors, students, and post-docs, and talked to them for most of the night. They did ask me a bunch of questions about the US political situation which was an interesting conversation to have with people who are see it from an outside perspective.</p>
-                <p>The main conference started on Wednesday and I really enjoyed the keynote speaker that day. She runs an inclusive design lab and described three projects that all sounded amazing. Her talk was about the importance of building trust with stakeholders during the elicitation process and how that can affect the system being created. After the conference, I went to the Museum of Military History. It was very much in Spanish but I had a successful conversation with the security guard and then managed to read most of the museum content (though slowly). It had more artifacts and less chronological storytelling than I had hoped, but it was still cool to learn about history from Spain's perspective. It mainly covered colonization in Cuba, Puerto Rico, the Philippines, Morocco, and Guinea, as well as World War II and some miscellanous floods and other events.</p>
-                <p>Thursday night was the gala dinner which was at a really fancy hotel by the beach. I enjoyed this social context much more than the one where you randomly approach groups of people because once I sat a table I could actually get to know the people there. I ended up sitting with people who go to school in the US, Spain, Sweden, and the Netherlands and had a shockingly fun time. I also had the somewhat strange realization that I haven't socially hung out with cis men in several years which is kinda weird.</p>
-                <p>Friday was the last day of the conference. There was another talk I really liked about sustainable agriculture and treating nature as a stakeholder. The conference got out one session earlier so I did some tourist stuff afterwards. I did the audiotour of Saint Nicholas Cathedral, which had a cool ceiling, and walked through the Turia Garden to the City of Arts and Sciences. Sadly, I arrived there a few minutes too late to get a ticket into the aquarium. Then I ate a very delicious slice of cheesecake and watched the first game of the WSL season in my hotel room. Our flight left very early the next day but the travel went smoothly. I mostly did work and slept on the plane and also watched Moana.</p>
+                <h3>Knick the Knee</h3>
+                <p>Knick is doing good! I've been running regularly, though have been plagued by increasing shin pain that I refuse to give the satisfaction of calling a shin splint. I'm sure I have weak tibs and calves after being sedentary for so long so hopefully as I continue strengthening I will be able to increase the mileage in a sustainable way.</p>
+                <p>I recently graduated from PT (hopefully forever? knock on wood) but it got pretty exciting in there before I got kicked out. I'm allowed to jump, run as fast as I am physically able (not very fast), stop as abruptly as I am physically able (not very abruptly), and change direction. I'm still not supposed to lift too heavy or do contact, but I basically can do things which feels amazing and makes me want to just frolic around.</p>
+                <p>Plus, the cartilage is only eleven days away from being the consistency of cheese, which is a milestone that I have been eagerly awaiting pretty much since January 29.</p>
+
+                <h3>Evenings and Weekends</h3>
+                <p>I spent a day visiting Riley and Sky in Cambridge. Riley made me some fancy coffee with her espresso machine and then we went to Boston Common, took a spin on the carousel, and ate Chipotle in the garden where the <em>Make Way for Ducklings</em> book takes place. While I was in the eastern part of the state, I also went to my cousin's hockey game in Needham (he's ten I'm pretty sure). They lost 1-0 but his team was a lot better than I expected them to be. Then I went out to dinner at Bertucci's with my family.</p>
+                <p>I've also continued to attend Smith soccer's home games. My parents seem to not know what to do with themselves on the weekends without games to watch, so they've come up to watch some as well and so I also had a nice walk along the Mill River with them and have gotten some free dinners. It was great to see a bunch of people who came from near and far on Senior Day and to celebrate four of my favorite people. After, we went out to Packard's and discovered that we are all terrible at pool.</p>
+                <p>Mountain Day is way less exciting as a staff member, but I got my donut and shirt in the morning and then had a fairly productive day at work and then ran up Mt. Holyoke and then went to my book club. All in all, it was a pretty nice day.</p>
+                <p>I seem to have been reading less this month based on the number of books completed, possibly due to the time spent at work waiting for the pipeline and also the lovely time spent at Fruit St., who have been gracious to welcome me into their home an sometimes even feed me. I've also been baking a bit more. I've made brownies, scones, and chocolate chip cookies recently.</p>
+                <p>This weekend, I'm in Boston mainly visiting for Katie's birthday, but last night Katie, Chelsea, Sky, Riley, and I went out for dinner and drinks. Today, Katie, Chelsea, Alex, and I hiked Cannon Mountain in New Hampshire. The hike was nice except at the summit where there were hoards of people who had taken the tram to the top. Then we went to an awesome ice cream shop called Super Secret Ice Cream with fun seasonal flavors.</p>
+
+                <h3>Grad Applications</h3>
+                <p>No comment.</p>
             </div>
 
             <div class="books">
                 <h3>Books Read This Month</h3>
                 <div style="max-width:95%;display:flex;justify-content:center;justify-self:center;">
-                    <img src="https://m.media-amazon.com/images/I/71dQACXhz6L._UF1000,1000_QL80_.jpg" class="book">
-                    <img src="https://m.media-amazon.com/images/I/71aRsbTTd6L._UF1000,1000_QL80_.jpg" class="book">
-                    <img src="https://mpd-biblio-covers.imgix.net/9780312202316.jpg" class="book">
-                    <img src="https://m.media-amazon.com/images/I/91EQua17B-L._UF1000,1000_QL80_.jpg" class="book">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp7oGsh5MTrA94lp79--1buFGbTRlgi6QvNQ&s" class="book">
-                    <img src="https://m.media-amazon.com/images/I/81iNNN0QkLL._UF1000,1000_QL80_.jpg" class="book">
-                    <img src="https://images1.penguinrandomhouse.com/cover/9780593443163" class="book">
-                    <img src="https://m.media-amazon.com/images/I/61TcS7vkBZL._UF1000,1000_QL80_.jpg" class="book">
-                    <img src="https://m.media-amazon.com/images/I/81xA98dGSUL._UF1000,1000_QL80_.jpg" class="book">
-                    <img src="https://m.media-amazon.com/images/I/81Dy0Jw-AiL._UF1000,1000_QL80_.jpg" class="book">
+                    <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781982150921/tender-is-the-flesh-9781982150921_hr.jpg" class="book">
+                    <img src="https://m.media-amazon.com/images/I/81ZtYXnyCdL._UF1000,1000_QL80_.jpg" class="book">
+                    <img src="https://images.penguinrandomhouse.com/cover/9780593685778" class="book">
+                    <img src="https://m.media-amazon.com/images/I/615V3yr0G0L._UF1000,1000_QL80_.jpg" class="book">
+                    <img src="https://m.media-amazon.com/images/I/51eUw-v0X+L._UF1000,1000_QL80_.jpg" class="book">
+                    <img src="https://m.media-amazon.com/images/I/713IkDuZChL._UF1000,1000_QL80_.jpg" class="book">
                 </div>
             </div>
 
             <div class="footer">
-                <p>Konner's Life Update | September 18, 2025 | <a href="https://forms.gle/w47quSTaYAfPKhaXA">Unsubscribe</a></p>
+                <p>Life Update | October 18, 2025 | <a href="https://forms.gle/w47quSTaYAfPKhaXA">Unsubscribe</a></p>
             </div>
 
         </div>
