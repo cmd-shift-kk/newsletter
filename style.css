@@ -112,6 +112,13 @@ h4 a:hover {
     width: 8%;
     margin-bottom: 20px;
 }
+.book-row {
+    max-width:95%;
+    display:flex;
+    justify-content: center;
+    justify-self: center;
+    flex-wrap: wrap;
+}
 
 /* scroll bar */
 ::-webkit-scrollbar {
